@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Calendar</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>To-Do List Application</h1>
+    </header>
+
+    <main class="todo-container">
+        <h2>To Do</h2>
+        <div class="todo-input">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <input type="date" id="start-date" placeholder="Start Date">
+            <input type="date" id="completion-date" placeholder="Completion Date">
+            <button id="add-task-btn">Add Task</button>
+            <button id="complete-task-btn">Completed Task</button>
+            <button id="all-task-btn">All Task</button>
+        </div>
+        <ul id="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2024 To-Do App. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

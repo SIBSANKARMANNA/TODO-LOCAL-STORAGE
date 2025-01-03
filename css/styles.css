@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+ .app-header {
+    background-color: #a18852f9;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+/* Footer */
+.app-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main To-Do Container */
+.todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* width: 750px; */
+    text-align: center;
+    margin: auto;
+}
+
+/* Heading */
+h1 {
+    margin: 0;
+}
+
+/* Input Section */
+.todo-input {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+/* Additional Styles for Calendar Inputs */
+.todo-input input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#add-task-btn ,#complete-task-btn,#all-task-btn{
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-task-btn:hover,#complete-task-btn:hover,#all-task-btn:hover {
+    background-color: #070505;
+}
+
+/* Task List */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Buttons */
+.task-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.task-btn.complete {
+    color: #28a745;
+}
+
+.task-btn.delete {
+    color: #dc3545;
+}
